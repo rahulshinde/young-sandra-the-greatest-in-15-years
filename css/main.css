@@ -1,0 +1,171 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.underline {
+  text-decoration: underline; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: #000899;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#151e72, #2e42ff, #151e72);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#151e72, #2e42ff, #151e72);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#151e72, #2e42ff, #151e72);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#151e72, #2e42ff, #151e72);
+  /* Standard syntax */ }
+
+@-webkit-keyframes snow {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: 0px 1000px, 0px 400px, 0px 300px; } }
+#snow {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: -100;
+  background-image: url("../img/snow1.png"), url("../img/snow2.png"), url("../img/snow3.png");
+  -webkit-animation: snow 20s linear infinite; }
+
+#cover {
+  padding-bottom: 100vh;
+  width: 100%;
+  /*margin-bottom: 100vh;*/
+  color: #c1a27c;
+  /*background-color: #000899;*/
+  text-align: center; }
+  #cover .left,
+  #cover .right {
+    display: inline-block;
+    vertical-align: middle; }
+  #cover .left {
+    margin-top: 24vh;
+    width: 40rem;
+    transform: scale(1, 3);
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    font-size: 5.5rem; }
+  #cover .right {
+    padding-top: 10rem;
+    width: 25rem; }
+    #cover .right h1 {
+      font-family: 'Yellowtail', cursive;
+      font-size: 2rem;
+      line-height: 1.3em;
+      margin-bottom: 1rem; }
+    #cover .right h2 {
+      font-family: 'Droid Serif', serif;
+      margin-bottom: 1rem; }
+    #cover .right h3 {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 1.8rem; }
+
+#story p {
+  margin-left: 10%;
+  text-align: left;
+  width: 90%;
+  padding-right: 28%;
+  color: #c1a27c;
+  font-size: 2rem;
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.3em;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem; }
+  #story p .highlight {
+    font-family: 'Yellowtail', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 1.8rem; }
+  #story p .tab {
+    margin-left: 5%; }
+  #story p .quote {
+    margin-left: -0.9rem; }
+
+.background {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: red;
+  top: 0;
+  opacity: 0;
+  transition: opacity ease 0.5s;
+  -webkit-transition: opacity ease 0.5s; }
+
+.background.show {
+  opacity: 1; }
+
+#section1_background {
+  left: 0; }
+
+#section2_background {
+  left: 50px; }
+
+#section3_background {
+  left: 100px; }
+
+#section4_background {
+  left: 150px; }
+
+#section5_background {
+  left: 200px; }
+
+#section6_background {
+  left: 250px; }
+
+/*# sourceMappingURL=main.css.map */
