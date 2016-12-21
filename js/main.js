@@ -11,12 +11,12 @@ $(document).ready( function(){
 
 Site.backgroundChange = function(){
   Site.scroll = $(document).scrollTop() + $(window).height();
-  Site.section1 = $('#section1').offset().top + ($(window).height() * 0.5);
-  Site.section2 = $('#section2').offset().top + ($(window).height() * 0.5);
-  Site.section3 = $('#section3').offset().top + ($(window).height() * 0.5);
-  Site.section4 = $('#section4').offset().top + ($(window).height() * 0.5);
-  Site.section5 = $('#section5').offset().top + ($(window).height() * 0.5);
-  Site.section6 = $('#section6').offset().top + ($(window).height() * 0.5);
+  Site.section1 = $('#section1').offset().top + ($(window).height() * 0.6);
+  Site.section2 = $('#section2').offset().top + ($(window).height() * 0.6);
+  Site.section3 = $('#section3').offset().top + ($(window).height() * 0.6);
+  Site.section4 = $('#section4').offset().top + ($(window).height() * 0.6);
+  Site.section5 = $('#section5').offset().top + ($(window).height() * 0.6);
+  Site.section6 = $('#section6').offset().top + ($(window).height() * 0.6);
 
   if (Site.scroll >= Site.section1 && Site.scroll < Site.section2 ){
     if($('#section1_background').hasClass('show')){
