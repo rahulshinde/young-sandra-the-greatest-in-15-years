@@ -125,6 +125,7 @@ body {
     left: 20%; }
 
 #story p {
+  margin-bottom: 4rem;
   margin-left: 8%;
   text-align: left;
   width: 90%;
@@ -132,8 +133,7 @@ body {
   color: #c1a27c;
   font-size: 2rem;
   font-family: 'Noto Sans', sans-serif;
-  line-height: 1.3em;
-  margin-bottom: 3rem; }
+  line-height: 1.3em; }
   #story p .highlight {
     font-family: 'Yellowtail', cursive;
     text-transform: uppercase;
@@ -167,11 +167,31 @@ body {
 .background.show {
   opacity: 1; }
 
+p img {
+  float: right; }
+p .full {
+  width: 50rem; }
+p .third {
+  width: 30rem; }
+
 p#section1 {
   padding-bottom: 3rem; }
+  p#section1 img:nth-child(1) {
+    width: 7rem;
+    margin-right: 5rem; }
+  p#section1 .img2 {
+    width: 100%; }
 
 p#section2 {
   padding-bottom: 3rem; }
+  p#section2 .img1 {
+    width: 50rem; }
+  p#section2 .img3 {
+    width: 30rem; }
+  p#section2 .img4 {
+    width: 50rem; }
+  p#section2 .img5 {
+    width: 30rem; }
 
 p#section3 {
   padding-bottom: 3rem; }
@@ -187,7 +207,7 @@ p#section6 {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   position: relative; }
-  p#section6 img {
+  p#section6 #img-end {
     position: absolute;
     bottom: 0;
     width: 50%;
