@@ -6,6 +6,10 @@ $(document).ready( function(){
   $('html').css({ 'font-size': Site.root_size });
   $(window).resize(changeRootFontSize);
 
+  setTimeout(function(){
+    $('#cover').addClass('show');
+  }, 600)
+
   $(document).on('scroll', Site.backgroundChange);
 })
 

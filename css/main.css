@@ -84,6 +84,8 @@ body {
   -webkit-animation: snow 20s linear infinite; }
 
 #cover {
+  opacity: 0;
+  transition: opacity ease 1.2s;
   position: relative;
   height: 100vh;
   margin-bottom: 10rem;
@@ -92,6 +94,8 @@ body {
   color: #c1a27c;
   /*background-color: #000899;*/
   text-align: center; }
+  #cover.show {
+    opacity: 1; }
   #cover .left,
   #cover .right {
     display: inline-block;
